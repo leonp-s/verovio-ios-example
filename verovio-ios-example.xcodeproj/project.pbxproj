@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E1F8D9632DFDD28C00039FBD /* VerovioFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F8D9612DFDD23D00039FBD /* VerovioFramework.framework */; };
+		E11A3EF22DFDD739004588CF /* VerovioFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F8D9612DFDD23D00039FBD /* VerovioFramework.framework */; };
+		E11A3EF32DFDD739004588CF /* VerovioFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1F8D9612DFDD23D00039FBD /* VerovioFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E11A3EF42DFDD739004588CF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E11A3EF32DFDD739004588CF /* VerovioFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E1ECC1FE2DFDCD2300FE338E /* verovio-ios-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "verovio-ios-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F8D9532DFDD23D00039FBD /* Verovio.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Verovio.xcodeproj; path = verovio/Verovio.xcodeproj; sourceTree = "<group>"; };
@@ -45,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F8D9632DFDD28C00039FBD /* VerovioFramework.framework in Frameworks */,
+				E11A3EF22DFDD739004588CF /* VerovioFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +110,7 @@
 				E1ECC1FA2DFDCD2300FE338E /* Sources */,
 				E1ECC1FB2DFDCD2300FE338E /* Frameworks */,
 				E1ECC1FC2DFDCD2300FE338E /* Resources */,
+				E11A3EF42DFDD739004588CF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
