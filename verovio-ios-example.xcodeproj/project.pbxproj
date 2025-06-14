@@ -6,8 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E1F8D9632DFDD28C00039FBD /* VerovioFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F8D9612DFDD23D00039FBD /* VerovioFramework.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1F8D9602DFDD23D00039FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1F8D9532DFDD23D00039FBD /* Verovio.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BB4C4A5222A930A3001F6AF0;
+			remoteInfo = VerovioFramework;
+		};
+		E1F8D9642DFDD2B000039FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1F8D9532DFDD23D00039FBD /* Verovio.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4C4A5122A930A3001F6AF0;
+			remoteInfo = VerovioFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E1ECC1FE2DFDCD2300FE338E /* verovio-ios-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "verovio-ios-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F8D9532DFDD23D00039FBD /* Verovio.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Verovio.xcodeproj; path = verovio/Verovio.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F8D9632DFDD28C00039FBD /* VerovioFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +57,8 @@
 			children = (
 				E1ECC2002DFDCD2300FE338E /* verovio-ios-example */,
 				E1ECC1FF2DFDCD2300FE338E /* Products */,
+				E1F8D9532DFDD23D00039FBD /* Verovio.xcodeproj */,
+				E1F8D9622DFDD28C00039FBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +68,21 @@
 				E1ECC1FE2DFDCD2300FE338E /* verovio-ios-example.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E1F8D9542DFDD23D00039FBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1F8D9612DFDD23D00039FBD /* VerovioFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1F8D9622DFDD28C00039FBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,6 +99,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E1F8D9652DFDD2B000039FBD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				E1ECC2002DFDCD2300FE338E /* verovio-ios-example */,
@@ -82,6 +123,7 @@
 				TargetAttributes = {
 					E1ECC1FD2DFDCD2300FE338E = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
@@ -97,12 +139,28 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E1ECC1FF2DFDCD2300FE338E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E1F8D9542DFDD23D00039FBD /* Products */;
+					ProjectRef = E1F8D9532DFDD23D00039FBD /* Verovio.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E1ECC1FD2DFDCD2300FE338E /* verovio-ios-example */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E1F8D9612DFDD23D00039FBD /* VerovioFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VerovioFramework.framework;
+			remoteRef = E1F8D9602DFDD23D00039FBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E1ECC1FC2DFDCD2300FE338E /* Resources */ = {
@@ -123,6 +181,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1F8D9652DFDD2B000039FBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VerovioFramework;
+			targetProxy = E1F8D9642DFDD2B000039FBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E1ECC20A2DFDCD2400FE338E /* Debug */ = {
@@ -249,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"verovio-ios-example/Preview Content\"";
@@ -268,6 +335,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leonps.verovio-ios-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "verovio-ios-example/verovio-ios-example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -278,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"verovio-ios-example/Preview Content\"";
@@ -297,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leonps.verovio-ios-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "verovio-ios-example/verovio-ios-example-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
