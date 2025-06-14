@@ -1,0 +1,22 @@
+PODS:
+  - Verovio (5.4.0-dev)
+
+DEPENDENCIES:
+  - Verovio (from `https://github.com/rism-digital/verovio.git`, branch `develop`)
+
+EXTERNAL SOURCES:
+  Verovio:
+    :branch: develop
+    :git: https://github.com/rism-digital/verovio.git
+
+CHECKOUT OPTIONS:
+  Verovio:
+    :commit: 8c0e5300dae0b15c629de02a24607fcbfcc474f0
+    :git: https://github.com/rism-digital/verovio.git
+
+SPEC CHECKSUMS:
+  Verovio: e324b0360e69decb7e01cf9b93695090dacb9a28
+
+PODFILE CHECKSUM: 118745afa2cf0760c9bfbbcecd5d3a0111d16eea
+
+COCOAPODS: 1.16.2

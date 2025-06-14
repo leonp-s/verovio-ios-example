@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F9991CBA000C37AF5D56DB3A /* Pods_verovio_ios_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C331418080D9B407ED12E1 /* Pods_verovio_ios_example.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		A6B2CD4E10D3CD9884D31961 /* Pods-verovio-ios-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-verovio-ios-example.debug.xcconfig"; path = "Target Support Files/Pods-verovio-ios-example/Pods-verovio-ios-example.debug.xcconfig"; sourceTree = "<group>"; };
+		D9C331418080D9B407ED12E1 /* Pods_verovio_ios_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_verovio_ios_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1ECC1FE2DFDCD2300FE338E /* verovio-ios-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "verovio-ios-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1ECC2192DFDCECC00FE338E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		E1F8D91E2DFDD05700039FBD /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FF78D03DB678B3E63ACAE9B5 /* Pods-verovio-ios-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-verovio-ios-example.release.xcconfig"; path = "Target Support Files/Pods-verovio-ios-example/Pods-verovio-ios-example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,17 +32,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9991CBA000C37AF5D56DB3A /* Pods_verovio_ios_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D94A4C957EEA5801A4DEDE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6B2CD4E10D3CD9884D31961 /* Pods-verovio-ios-example.debug.xcconfig */,
+				FF78D03DB678B3E63ACAE9B5 /* Pods-verovio-ios-example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A0368A7CE857A9B875F0648E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9C331418080D9B407ED12E1 /* Pods_verovio_ios_example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1ECC1F52DFDCD2300FE338E = {
 			isa = PBXGroup;
 			children = (
+				E1F8D91E2DFDD05700039FBD /* Podfile */,
 				E1ECC2002DFDCD2300FE338E /* verovio-ios-example */,
 				E1ECC1FF2DFDCD2300FE338E /* Products */,
+				8D94A4C957EEA5801A4DEDE3 /* Pods */,
+				A0368A7CE857A9B875F0648E /* Frameworks */,
+				E1ECC2192DFDCECC00FE338E /* Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +83,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1ECC20C2DFDCD2400FE338E /* Build configuration list for PBXNativeTarget "verovio-ios-example" */;
 			buildPhases = (
+				C1E208FDC6CAC4E4DA1CFA03 /* [CP] Check Pods Manifest.lock */,
 				E1ECC1FA2DFDCD2300FE338E /* Sources */,
 				E1ECC1FB2DFDCD2300FE338E /* Frameworks */,
 				E1ECC1FC2DFDCD2300FE338E /* Resources */,
+				5B12BFEC3ED36A7B5E0900BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -64,8 +97,6 @@
 				E1ECC2002DFDCD2300FE338E /* verovio-ios-example */,
 			);
 			name = "verovio-ios-example";
-			packageProductDependencies = (
-			);
 			productName = "verovio-ios-example";
 			productReference = E1ECC1FE2DFDCD2300FE338E /* verovio-ios-example.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +144,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B12BFEC3ED36A7B5E0900BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-verovio-ios-example/Pods-verovio-ios-example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-verovio-ios-example/Pods-verovio-ios-example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-verovio-ios-example/Pods-verovio-ios-example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E208FDC6CAC4E4DA1CFA03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-verovio-ios-example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1ECC1FA2DFDCD2300FE338E /* Sources */ = {
@@ -246,6 +319,7 @@
 		};
 		E1ECC20D2DFDCD2400FE338E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6B2CD4E10D3CD9884D31961 /* Pods-verovio-ios-example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -268,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leonps.verovio-ios-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -275,6 +350,7 @@
 		};
 		E1ECC20E2DFDCD2400FE338E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF78D03DB678B3E63ACAE9B5 /* Pods-verovio-ios-example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leonps.verovio-ios-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
